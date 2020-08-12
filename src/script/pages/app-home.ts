@@ -77,21 +77,18 @@ export class AppHome extends LitElement {
 
         <div id="welcomeBlock">
 
-        <pwa-auth 
-          microsoftkey="..."
-          googlekey="..."
-          facebookkey="..."
-          applekey="...">
-        </pwa-auth>
-
-          <img src="assets/icons/icon_512.png" alt="app icon">
           <h2>${this.message}</h2>
 
           <p>
-            Welcome to the <a href="https://pwabuilder.com">PWABuilder</a> pwa-starter!
-
-            Be sure to head back to <a href="https://pwabuilder.com">PWABuilder</a> when you are ready to ship this PWA to the Microsoft, Google Play and Samsung Galaxy stores!
+           Welcome to Startr! ~Blurb about our app~
           </p>
+
+          <pwa-auth 
+          microsoftkey="a2a51ada-aad5-43ae-8a98-6ff9ac0f0fe7"
+          googlekey="796158024561-mqc6ed7cvkkfoj744plgoa2f7hp8rl2e.apps.googleusercontent.com"
+          facebookkey="..."
+          applekey="...">
+        </pwa-auth>
 
           ${'share' in navigator ? html`<button @click="${this.share}">Share this Starter!</button>` : null}
         </div>
