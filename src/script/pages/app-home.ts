@@ -2,6 +2,7 @@ import { LitElement, css, html, customElement, property } from 'lit-element';
 
 // For more info on the @pwabuilder/pwainstall component click here https://github.com/pwa-builder/pwa-install
 import '@pwabuilder/pwainstall';
+import '@pwabuilder/pwaauth'
 
 @customElement('app-home')
 export class AppHome extends LitElement {
@@ -75,6 +76,13 @@ export class AppHome extends LitElement {
       <div>
 
         <div id="welcomeBlock">
+
+        <pwa-auth 
+          microsoftkey="..."
+          googlekey="..."
+          facebookkey="..."
+          applekey="...">
+        </pwa-auth>
 
           <img src="assets/icons/icon_512.png" alt="app icon">
           <h2>${this.message}</h2>
