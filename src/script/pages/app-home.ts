@@ -84,9 +84,9 @@ export class AppHome extends LitElement {
           </p>
 
           <pwa-auth 
-          microsoftkey="a2a51ada-aad5-43ae-8a98-6ff9ac0f0fe7"
-          googlekey="796158024561-mqc6ed7cvkkfoj744plgoa2f7hp8rl2e.apps.googleusercontent.com"
-          facebookkey="..."
+          microsoftkey="d44c122e-256e-4c6f-bb43-bb2af72aa041"
+          googlekey="7796158024561-jhdol80scvpmi17tkv5alc2coe2krplc.apps.googleusercontent.com"
+          facebookkey="1989932427809114"
           applekey="...">
         </pwa-auth>
 
